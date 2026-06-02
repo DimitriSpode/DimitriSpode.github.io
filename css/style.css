@@ -380,16 +380,31 @@ button[type="submit"]:hover {
 .indice-receitas {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 1.2rem;
+    gap: 1.5rem;
+}
+
+.indice-receitas-home {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.ver-todas-receitas {
+    margin-top: 1.5rem;
+    text-align: center;
 }
 
 .receita-card {
     background-color: var(--cor-superficie);
     border: 1px solid var(--cor-borda);
     border-radius: 8px;
-    overflow: hidden;
     display: flex;
     flex-direction: column;
+    min-width: 0;
+}
+
+.receita-card > a:first-of-type {
+    overflow: hidden;
+    border-radius: 7px 7px 0 0;
+    flex-shrink: 0;
 }
 
 .receita-card img {
@@ -412,9 +427,10 @@ button[type="submit"]:hover {
 }
 
 .receita-card-acao {
-    padding: 0 1rem 1.25rem;
+    padding: 0.5rem 1rem 1.5rem;
     margin-top: auto;
     text-align: center;
+    flex-shrink: 0;
 }
 
 .link-receita,
@@ -569,5 +585,9 @@ footer {
     .controles {
         width: 100%;
         justify-content: flex-end;
+    }
+
+    .indice-receitas-home {
+        grid-template-columns: 1fr;
     }
 }
