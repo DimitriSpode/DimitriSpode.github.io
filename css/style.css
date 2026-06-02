@@ -214,12 +214,12 @@ h4 {
     margin-top: 0;
 }
 
-.card a {
+.card a:not(.link-receita) {
     color: var(--cor-texto);
     font-weight: 600;
 }
 
-.card a:hover {
+.card a:not(.link-receita):hover {
     color: var(--cor-texto-suave);
 }
 
@@ -411,23 +411,50 @@ button[type="submit"]:hover {
     flex: 1;
 }
 
-.receita-card .link-receita {
-    margin: 0 1rem 1rem;
-    align-self: flex-start;
-    text-decoration: none;
-    padding: 0.4rem 0.8rem;
-    border: 1px solid var(--cor-borda);
-    border-radius: 6px;
-    background-color: var(--cor-superficie-alt);
-    color: var(--cor-titulo);
-    font-weight: 600;
-    font-size: 0.95rem;
+.receita-card-acao {
+    padding: 0 1rem 1.25rem;
+    margin-top: auto;
+    text-align: center;
 }
 
-.receita-card .link-receita:hover {
+.link-receita,
+.link-voltar {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.7rem 1.25rem;
+    border: 1px solid var(--cor-borda-forte);
+    border-radius: 6px;
     background-color: var(--cor-ativo);
     color: var(--cor-ativo-texto);
-    border-color: var(--cor-ativo);
+    font-weight: 600;
+    font-size: 0.95rem;
+    font-family: inherit;
+    line-height: 1.4;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s, opacity 0.2s;
+}
+
+.link-receita:hover,
+.link-voltar:hover {
+    background-color: var(--cor-superficie-alt);
+    color: var(--cor-titulo);
+    border-color: var(--cor-borda-forte);
+}
+
+.link-receita:focus-visible,
+.link-voltar:focus-visible {
+    outline: 2px solid var(--cor-borda-forte);
+    outline-offset: 2px;
+}
+
+.receita-card .link-receita {
+    display: block;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.nav-receita-voltar {
+    margin-bottom: 1.5rem;
 }
 
 .receita-card > a {
