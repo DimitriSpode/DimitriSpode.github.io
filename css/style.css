@@ -376,59 +376,6 @@ button[type="submit"]:hover {
     display: block;
 }
 
-/* Tabs de receitas */
-.tabs {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    margin: 1.5rem 0 1rem;
-    border-bottom: 2px solid var(--cor-borda);
-    padding-bottom: 0.5rem;
-}
-
-.tab-btn {
-    padding: 0.6rem 1rem;
-    border: 1px solid var(--cor-borda);
-    border-radius: 6px 6px 0 0;
-    background-color: var(--cor-superficie-alt);
-    color: var(--cor-texto);
-    cursor: pointer;
-    font-family: inherit;
-    font-size: 0.95rem;
-}
-
-.tab-btn.ativa {
-    background-color: var(--cor-ativo);
-    color: var(--cor-ativo-texto);
-    border-color: var(--cor-borda-forte);
-    font-weight: 600;
-}
-
-.tab-conteudo {
-    display: none;
-    padding-top: 1rem;
-}
-
-.tab-conteudo.ativa {
-    display: block;
-}
-
-.link-tab {
-    background: none;
-    border: none;
-    padding: 0;
-    color: var(--cor-titulo);
-    font-weight: 600;
-    font-size: 1rem;
-    font-family: inherit;
-    cursor: pointer;
-    text-decoration: underline;
-}
-
-.link-tab:hover {
-    color: var(--cor-texto-suave);
-}
-
 /* Indice de receitas com imagens */
 .indice-receitas {
     display: grid;
@@ -464,7 +411,7 @@ button[type="submit"]:hover {
     flex: 1;
 }
 
-.receita-card .link-tab {
+.receita-card .link-receita {
     margin: 0 1rem 1rem;
     align-self: flex-start;
     text-decoration: none;
@@ -472,9 +419,12 @@ button[type="submit"]:hover {
     border: 1px solid var(--cor-borda);
     border-radius: 6px;
     background-color: var(--cor-superficie-alt);
+    color: var(--cor-titulo);
+    font-weight: 600;
+    font-size: 0.95rem;
 }
 
-.receita-card .link-tab:hover {
+.receita-card .link-receita:hover {
     background-color: var(--cor-ativo);
     color: var(--cor-ativo-texto);
     border-color: var(--cor-ativo);
@@ -511,6 +461,7 @@ button[type="submit"]:hover {
     border: 1px solid var(--cor-borda);
 }
 
+.receita-cabecalho h2,
 .receita-cabecalho h3 {
     margin-top: 0;
 }

@@ -34,56 +34,6 @@ if (btnDiminuir) {
     });
 }
 
-// Tabs da pagina de receitas
-var botoesTab = document.querySelectorAll(".tab-btn");
-var linksTab = document.querySelectorAll(".link-tab");
-
-function abrirTab(idTab) {
-    var conteudos = document.querySelectorAll(".tab-conteudo");
-    var botoes = document.querySelectorAll(".tab-btn");
-
-    for (var i = 0; i < conteudos.length; i++) {
-        conteudos[i].classList.remove("ativa");
-    }
-    for (var j = 0; j < botoes.length; j++) {
-        botoes[j].classList.remove("ativa");
-    }
-
-    var tabEscolhida = document.getElementById(idTab);
-    if (tabEscolhida) {
-        tabEscolhida.classList.add("ativa");
-    }
-
-    var botaoAtivo = document.querySelector('.tab-btn[data-tab="' + idTab + '"]');
-    if (botaoAtivo) {
-        botaoAtivo.classList.add("ativa");
-    }
-}
-
-for (var t = 0; t < botoesTab.length; t++) {
-    botoesTab[t].addEventListener("click", function () {
-        abrirTab(this.getAttribute("data-tab"));
-    });
-}
-
-for (var l = 0; l < linksTab.length; l++) {
-    linksTab[l].addEventListener("click", function () {
-        abrirTab(this.getAttribute("data-tab"));
-    });
-}
-
-var mapaHashReceitas = {
-    maracuja: "tab-maracuja",
-    cenoura: "tab-cenoura",
-    macarrao: "tab-macarrao",
-    panqueca: "tab-panqueca"
-};
-
-var hashReceita = window.location.hash.replace("#", "");
-if (mapaHashReceitas[hashReceita]) {
-    abrirTab(mapaHashReceitas[hashReceita]);
-}
-
 // Validacao do formulario de contato
 var formContato = document.getElementById("form-contato");
 if (formContato) {

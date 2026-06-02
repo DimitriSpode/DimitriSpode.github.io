@@ -36,182 +36,40 @@
         <main class="conteudo">
             <section>
                 <h2>Receitas Favoritas</h2>
-                <p>Escolha uma aba ou clique em uma receita no indice abaixo.</p>
+                <p>Escolha uma receita abaixo para ver ingredientes e modo de preparo completos.</p>
 
-                <div class="tabs">
-                    <button type="button" class="tab-btn ativa" data-tab="tab-lista">Indice</button>
-                    <button type="button" class="tab-btn" data-tab="tab-maracuja">Mousse de Maracuja</button>
-                    <button type="button" class="tab-btn" data-tab="tab-cenoura">Bolo de Cenoura</button>
-                    <button type="button" class="tab-btn" data-tab="tab-macarrao">Macarrao Alho e Oleo</button>
-                    <button type="button" class="tab-btn" data-tab="tab-panqueca">Panqueca Simples</button>
-                </div>
-
-                <!-- Indice com imagens -->
-                <div id="tab-lista" class="tab-conteudo ativa">
-                    <div class="indice-receitas">
-                        <article class="receita-card">
-                            <img src="assets/mousse.jpg" alt="Mousse de maracuja em taças">
-                            <h3>Mousse de Maracuja</h3>
-                            <p>Sobremesa cremosa e refrescante.</p>
-                            <button type="button" class="link-tab" data-tab="tab-maracuja">Ver receita</button>
-                        </article>
-                        <article class="receita-card">
+                <div class="indice-receitas">
+                    <article class="receita-card">
+                        <a href="mousse-maracuja.html">
+                            <img src="assets/mousse.jpg" alt="Mousse de maracuja em tacas">
+                        </a>
+                        <h3><a href="mousse-maracuja.html">Mousse de Maracuja</a></h3>
+                        <p>Sobremesa cremosa e refrescante.</p>
+                        <a href="mousse-maracuja.html" class="link-receita">Ver receita</a>
+                    </article>
+                    <article class="receita-card">
+                        <a href="bolo-cenoura.html">
                             <img src="assets/bolo_cenoura.png" alt="Fatia de bolo de cenoura com cobertura">
-                            <h3>Bolo de Cenoura</h3>
-                            <p>Bolo fofinho com cobertura de chocolate.</p>
-                            <button type="button" class="link-tab" data-tab="tab-cenoura">Ver receita</button>
-                        </article>
-                        <article class="receita-card">
+                        </a>
+                        <h3><a href="bolo-cenoura.html">Bolo de Cenoura</a></h3>
+                        <p>Bolo fofinho com cobertura de chocolate.</p>
+                        <a href="bolo-cenoura.html" class="link-receita">Ver receita</a>
+                    </article>
+                    <article class="receita-card">
+                        <a href="macarrao-alho-oleo.html">
                             <img src="assets/massa.jpg" alt="Prato de macarrao ao alho e oleo">
-                            <h3>Macarrao ao Alho e Oleo</h3>
-                            <p>Prato rapido e saboroso para o dia a dia.</p>
-                            <button type="button" class="link-tab" data-tab="tab-macarrao">Ver receita</button>
-                        </article>
-                        <article class="receita-card">
+                        </a>
+                        <h3><a href="macarrao-alho-oleo.html">Macarrao ao Alho e Oleo</a></h3>
+                        <p>Prato rapido e saboroso para o dia a dia.</p>
+                        <a href="macarrao-alho-oleo.html" class="link-receita">Ver receita</a>
+                    </article>
+                    <article class="receita-card">
+                        <a href="panqueca-simples.html">
                             <img src="assets/panqueca.jpg" alt="Pilha de panquecas com mel">
-                            <h3>Panqueca Simples</h3>
-                            <p>Perfeita para o cafe da manha.</p>
-                            <button type="button" class="link-tab" data-tab="tab-panqueca">Ver receita</button>
-                        </article>
-                    </div>
-                </div>
-
-                <!-- Mousse de Maracuja -->
-                <div id="tab-maracuja" class="tab-conteudo">
-                    <article class="receita-detalhe">
-                        <div class="receita-cabecalho">
-                            <img class="receita-img" src="assets/mousse.jpg" alt="Mousse de maracuja">
-                            <div>
-                                <h3>Mousse de Maracuja</h3>
-                                <p>Sobremesa leve e refrescante. Rendimento: 6 porcoes.</p>
-                            </div>
-                        </div>
-                        <section class="ingredientes">
-                            <h4>Ingredientes</h4>
-                            <ul>
-                                <li>1 lata de leite condensado (395g)</li>
-                                <li>1 lata de creme de leite (sem soro)</li>
-                                <li>1/2 xicara de suco de maracuja</li>
-                                <li>2 colheres de sopa de polpa de maracuja</li>
-                                <li>1 pacote de gelatina incolor (12g)</li>
-                                <li>3 colheres de sopa de agua morna</li>
-                            </ul>
-                        </section>
-                        <section class="preparo">
-                            <h4>Modo de Preparo</h4>
-                            <ol>
-                                <li>Dissolva a gelatina na agua morna e reserve.</li>
-                                <li>Bata o leite condensado, o creme de leite e o suco no liquidificador.</li>
-                                <li>Adicione a gelatina e a polpa. Bata novamente.</li>
-                                <li>Despeje em tacas e leve a geladeira por 4 horas.</li>
-                                <li>Sirva gelado com sementes de maracuja.</li>
-                            </ol>
-                        </section>
-                    </article>
-                </div>
-
-                <!-- Bolo de Cenoura -->
-                <div id="tab-cenoura" class="tab-conteudo">
-                    <article class="receita-detalhe">
-                        <div class="receita-cabecalho">
-                            <img class="receita-img" src="assets/bolo_cenoura.png" alt="Bolo de cenoura com cobertura de chocolate">
-                            <div>
-                                <h3>Bolo de Cenoura</h3>
-                                <p>Bolo fofinho da minha avo. Rendimento: 12 fatias.</p>
-                            </div>
-                        </div>
-                        <section class="ingredientes">
-                            <h4>Ingredientes</h4>
-                            <ul>
-                                <li>3 cenouras medias raladas</li>
-                                <li>3 ovos</li>
-                                <li>1 xicara de oleo</li>
-                                <li>2 xicaras de acucar</li>
-                                <li>2 xicaras de farinha de trigo</li>
-                                <li>1 colher de fermento em po</li>
-                                <li>Cobertura: 1 lata de creme de leite, 4 colheres de achocolatado, 1 colher de manteiga</li>
-                            </ul>
-                        </section>
-                        <section class="preparo">
-                            <h4>Modo de Preparo</h4>
-                            <ol>
-                                <li>Bata no liquidificador as cenouras, os ovos e o oleo.</li>
-                                <li>Despeje em uma tigela e misture o acucar e a farinha.</li>
-                                <li>Adicione o fermento e misture delicadamente.</li>
-                                <li>Asse em forma untada a 180°C por cerca de 40 minutos.</li>
-                                <li>Para a cobertura, leve todos os ingredientes ao fogo ate engrossar.</li>
-                                <li>Despeje sobre o bolo frio e sirva.</li>
-                            </ol>
-                        </section>
-                    </article>
-                </div>
-
-                <!-- Macarrao -->
-                <div id="tab-macarrao" class="tab-conteudo">
-                    <article class="receita-detalhe">
-                        <div class="receita-cabecalho">
-                            <img class="receita-img" src="assets/massa.jpg" alt="Macarrao espaguete ao alho e oleo">
-                            <div>
-                                <h3>Macarrao ao Alho e Oleo</h3>
-                                <p>Receita rapida para o dia a dia. Rendimento: 4 porcoes.</p>
-                            </div>
-                        </div>
-                        <section class="ingredientes">
-                            <h4>Ingredientes</h4>
-                            <ul>
-                                <li>500g de macarrao espaguete</li>
-                                <li>1/2 xicara de azeite</li>
-                                <li>6 dentes de alho amassados</li>
-                                <li>Salsinha picada a gosto</li>
-                                <li>Sal e pimenta-do-reino</li>
-                                <li>Queijo parmesao ralado (opcional)</li>
-                            </ul>
-                        </section>
-                        <section class="preparo">
-                            <h4>Modo de Preparo</h4>
-                            <ol>
-                                <li>Cozinhe o macarrao em agua fervente com sal ate ficar al dente.</li>
-                                <li>Em uma panela, aqueca o azeite e doure o alho sem queimar.</li>
-                                <li>Escorra o macarrao e junte na panela com o alho.</li>
-                                <li>Misture bem, tempere com sal e pimenta.</li>
-                                <li>Finalize com salsinha e parmesao. Sirva quente.</li>
-                            </ol>
-                        </section>
-                    </article>
-                </div>
-
-                <!-- Panqueca -->
-                <div id="tab-panqueca" class="tab-conteudo">
-                    <article class="receita-detalhe">
-                        <div class="receita-cabecalho">
-                            <img class="receita-img" src="assets/panqueca.jpg" alt="Panquecas empilhadas">
-                            <div>
-                                <h3>Panqueca Simples</h3>
-                                <p>Ideal para o cafe da manha. Rendimento: 8 panquecas.</p>
-                            </div>
-                        </div>
-                        <section class="ingredientes">
-                            <h4>Ingredientes</h4>
-                            <ul>
-                                <li>2 ovos</li>
-                                <li>1 xicara de leite</li>
-                                <li>1 xicara de farinha de trigo</li>
-                                <li>1 colher de sopa de acucar</li>
-                                <li>1 pitada de sal</li>
-                                <li>1 colher de sopa de oleo</li>
-                                <li>Mel, frutas ou geleia para acompanhar</li>
-                            </ul>
-                        </section>
-                        <section class="preparo">
-                            <h4>Modo de Preparo</h4>
-                            <ol>
-                                <li>Bata todos os ingredientes no liquidificador ate formar uma massa lisa.</li>
-                                <li>Aqueca uma frigideira antiaderente com um fio de oleo.</li>
-                                <li>Despeje uma concha da massa e espalhe.</li>
-                                <li>Quando surgirem bolhas, vire e doure o outro lado.</li>
-                                <li>Repita ate acabar a massa. Sirva com mel ou frutas.</li>
-                            </ol>
-                        </section>
+                        </a>
+                        <h3><a href="panqueca-simples.html">Panqueca Simples</a></h3>
+                        <p>Perfeita para o cafe da manha.</p>
+                        <a href="panqueca-simples.html" class="link-receita">Ver receita</a>
                     </article>
                 </div>
             </section>

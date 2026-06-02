@@ -14,6 +14,9 @@ Site publicado em: **https://dimitrispode.github.io/**
 ├── contact.html
 ├── receitas.html
 ├── mousse-maracuja.html
+├── bolo-cenoura.html
+├── macarrao-alho-oleo.html
+├── panqueca-simples.html
 ├── css/style.css
 ├── js/script.js
 └── assets/
@@ -38,7 +41,7 @@ Abra https://dimitrispode.github.io/ e confira:
 - Imagens em `assets/`
 - Modo noturno e tamanho da fonte
 - Formulario de contato (validacao no navegador)
-- Abas em Receitas e links com `#maracuja`, `#cenoura`, etc.
+- Subpaginas de receitas com ingredientes e modo de preparo
 
 ## Observacoes
 
