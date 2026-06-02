@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Blog - Contato</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="topo">
+        <h1>Meu Blog Pessoal</h1>
+        <div class="controles">
+            <button id="btn-noturno" type="button">Modo Noturno</button>
+            <button id="btn-aumentar" type="button">A+</button>
+            <button id="btn-diminuir" type="button">A-</button>
+        </div>
+    </header>
+
+    <div class="layout">
+        <aside class="menu-lateral">
+            <h2>Canais</h2>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Sobre Mim</a></li>
+                    <li><a href="curriculum.html">Curriculo</a></li>
+                    <li><a href="contact.html" class="ativo">Contato</a></li>
+                    <li><a href="receitas.html">Receitas</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="conteudo">
+        <section>
+            <h2>Entre em Contato</h2>
+            <p>Preencha o formulario abaixo para enviar uma mensagem. Todos os campos sao obrigatorios.</p>
+
+            <form id="form-contato" action="#" method="post" novalidate>
+                <div>
+                    <label for="nome">Nome completo:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome">
+                    <span id="erro-nome" class="erro"></span>
+                </div>
+
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="seu@email.com">
+                    <span id="erro-email" class="erro"></span>
+                </div>
+
+                <div>
+                    <label for="assunto">Assunto:</label>
+                    <select id="assunto" name="assunto">
+                        <option value="duvida">Duvida</option>
+                        <option value="sugestao">Sugestao</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem aqui..."></textarea>
+                    <span id="erro-mensagem" class="erro"></span>
+                </div>
+
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+
+            <p id="mensagem-sucesso" class="mensagem-sucesso"></p>
+        </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 - Meu Blog Pessoal | Trabalho de Desenvolvimento Web</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

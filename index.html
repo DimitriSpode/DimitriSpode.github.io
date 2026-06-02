@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Blog - Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="topo">
+        <h1>Blog Dz</h1>
+        <div class="controles">
+            <button id="btn-noturno" type="button">Modo Noturno</button>
+            <button id="btn-aumentar" type="button">A+</button>
+            <button id="btn-diminuir" type="button">A-</button>
+        </div>
+    </header>
+
+    <div class="layout">
+        <aside class="menu-lateral">
+            <h2>Canais</h2>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="ativo">Home</a></li>
+                    <li><a href="about.html">Sobre Mim</a></li>
+                    <li><a href="curriculum.html">Curriculo</a></li>
+                    <li><a href="contact.html">Contato</a></li>
+                    <li><a href="receitas.html">Receitas</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="conteudo">
+            <section>
+                <h2>Bem-vindo ao meu blog!</h2>
+                <p>
+                    Ola! Este e o meu blog pessoal criado como trabalho da disciplina de
+                    Desenvolvimento Web. Aqui compartilho um pouco sobre minha trajetoria,
+                    curriculo, receitas favoritas e formas de contato.
+                </p>
+                <p>
+                    Use o menu lateral para navegar entre as paginas. Espero que goste!
+                </p>
+            </section>
+
+            <section>
+                <h2>Indice de Receitas</h2>
+                <p>Confira minhas receitas favoritas com fotos e passo a passo completo.</p>
+                <div class="indice-receitas">
+                    <article class="receita-card">
+                        <a href="receitas.html#maracuja">
+                            <img src="assets/mousse.jpg" alt="Mousse de maracuja">
+                        </a>
+                        <h3><a href="receitas.html#maracuja">Mousse de Maracuja</a></h3>
+                        <p>Sobremesa cremosa e refrescante.</p>
+                    </article>
+                    <article class="receita-card">
+                        <a href="receitas.html#cenoura">
+                            <img src="assets/bolo_cenoura.png" alt="Bolo de cenoura">
+                        </a>
+                        <h3><a href="receitas.html#cenoura">Bolo de Cenoura</a></h3>
+                        <p>Bolo fofinho com cobertura de chocolate.</p>
+                    </article>
+                    <article class="receita-card">
+                        <a href="receitas.html#macarrao">
+                            <img src="assets/massa.jpg" alt="Macarrao ao alho e oleo">
+                        </a>
+                        <h3><a href="receitas.html#macarrao">Macarrao ao Alho e Oleo</a></h3>
+                        <p>Prato rapido para o dia a dia.</p>
+                    </article>
+                    <article class="receita-card">
+                        <a href="receitas.html#panqueca">
+                            <img src="assets/panqueca.jpg" alt="Panquecas">
+                        </a>
+                        <h3><a href="receitas.html#panqueca">Panqueca Simples</a></h3>
+                        <p>Perfeita para o cafe da manha.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section>
+                <h2>Ultimas Postagens</h2>
+                <div class="postagens">
+                    <article class="card">
+                        <h3>Inicio das aulas</h3>
+                        <p>Comecei o semestre com muita animacao para aprender HTML, CSS e JavaScript.</p>
+                        <p><small>Publicado em: 10/03/2026</small></p>
+                    </article>
+                    <article class="card">
+                        <h3>Minha receita preferida</h3>
+                        <p>Descobri que fazer mousse de maracuja em casa e mais facil do que parece!</p>
+                        <p><a href="receitas.html#maracuja">Ver receita completa</a></p>
+                        <p><small>Publicado em: 05/03/2026</small></p>
+                    </article>
+                    <article class="card">
+                        <h3>Projeto do TDE</h3>
+                        <p>Estou montando este blog como entrega do trabalho. Ainda estou aprendendo, mas ja estou gostando!</p>
+                        <p><small>Publicado em: 01/03/2026</small></p>
+                    </article>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 - Blog do Dz | Trabalho de Desenvolvimento Web</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
